@@ -2,7 +2,7 @@ import { CalendarEvent } from './types';
 
 // Using the raw GitHub URL to ensure the image loads correctly in the preview.
 export const BACKGROUND_IMAGE_URL = "https://raw.githubusercontent.com/therobscott/Contobox-Holiday-Retreat-2025/main/house.png";
-export const FLOOR_IMAGE_URL = "./floor.png";
+export const FLOOR_IMAGE_URL = "https://raw.githubusercontent.com/therobscott/Contobox-Holiday-Retreat-2025/refs/heads/main/floor.png";
 
 export const EVENTS: CalendarEvent[] = [
   {
@@ -45,7 +45,7 @@ export const EVENTS: CalendarEvent[] = [
     id: 5,
     date: "10 December 2025",
     time: "10:00 AM",
-    activity: "Vertical Brainstorming Session",
+    activity: "Brainstorming Session",
     description: "We’re brainstorming new features and formats for a couple of verticals.",
     isOpen: false,
     showContent: false
