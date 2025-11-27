@@ -1,11 +1,8 @@
 import { CalendarEvent } from './types';
 
-// Using the prompt description, this image acts as the background. 
-// In a real deployment, this would be the local file path provided by the user.
-// We are using the placeholder URL as requested for the generated code, 
-// but styling it to accept the specific image.
-export const BACKGROUND_IMAGE_URL = "https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=2070&auto=format&fit=crop"; 
-// Note: In production, replace the above URL with the actual asset path of the provided vector house image.
+// Using the raw GitHub URL to ensure the image loads correctly in the preview.
+export const BACKGROUND_IMAGE_URL = "https://raw.githubusercontent.com/therobscott/Contobox-Holiday-Retreat-2025/main/house.png";
+export const FLOOR_IMAGE_URL = "./floor.png";
 
 export const EVENTS: CalendarEvent[] = [
   {
@@ -21,7 +18,7 @@ export const EVENTS: CalendarEvent[] = [
     id: 2,
     date: "9 December 2025",
     time: "6:00 PM",
-    activity: "Decorate Your Own Holiday Sweater Dinner",
+    activity: "Ugly Sweater Dinner",
     description: "Bring a holiday sweater or a regular sweater you don’t mind pinning things to. Decorations and safety pins will be provided.",
     isOpen: false,
     showContent: false
@@ -57,7 +54,7 @@ export const EVENTS: CalendarEvent[] = [
     id: 6,
     date: "10 December 2025",
     time: "11:00 AM",
-    activity: "AI (Productivity & Vibe Coding)",
+    activity: "AI Workshop",
     description: "The robots are here to help. We are going to learn some AI productivity tricks and how to vibe code.",
     isOpen: false,
     showContent: false

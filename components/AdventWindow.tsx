@@ -23,17 +23,17 @@ const AdventWindow: React.FC<AdventWindowProps> = ({ event, onClick }) => {
                 {/* Content Container - Animated. Opacity 0 until showContent is true (which happens after modal close) */}
                 <div className={`flex flex-col items-center justify-center text-center h-full w-full space-y-0.5 transition-opacity duration-1000 ease-out ${event.showContent ? 'opacity-100' : 'opacity-0'}`}>
                      {/* Date */}
-                     <span className="text-[0.55rem] md:text-xs text-white/80 font-semibold uppercase tracking-tight leading-none">
+                     <span className="text-[0.7rem] md:text-sm text-white/80 font-semibold uppercase tracking-tight leading-none">
                         {shortDate}
                      </span>
                      
                      {/* Time */}
-                     <span className="text-[0.6rem] md:text-xs text-amber-orange font-bold uppercase tracking-wide leading-none mb-0.5">
+                     <span className="text-[0.75rem] md:text-sm text-amber-orange font-bold uppercase tracking-wide leading-none mb-0.5">
                         {event.time}
                      </span>
                      
                      {/* Activity */}
-                     <span className="text-[0.6rem] md:text-sm text-white font-bold leading-tight line-clamp-3 md:line-clamp-4 break-words w-full">
+                     <span className="text-[0.8rem] md:text-base text-white font-bold leading-tight line-clamp-3 md:line-clamp-4 break-words w-full">
                         {event.activity}
                      </span>
                 </div>
